@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Orpheus Institute — Internal Access Node</title>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+  body {
+    margin: 0;
+    background-color: #0b0b0c;
+    color: #b8b8b8;
+    font-family: 'Share Tech Mono', monospace;
+    background-image: radial-gradient(circle at center, #101011 0%, #050506 80%);
+    overflow-x: hidden;
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: repeating-linear-gradient(
+      rgba(0,0,0,0.02) 0px,
+      rgba(0,0,0,0.02) 1px,
+      transparent 2px,
+      transparent 3px
+    );
+    pointer-events: none;
+    z-index: 10;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 8% auto;
+    padding: 20px;
+    background: rgba(20,20,22,0.45);
+    border: 1px solid #222;
+    box-shadow: 0 0 10px rgba(0,0,0,0.7);
+  }
+
+  h1 {
+    color: #d0d0d0;
+    font-weight: normal;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .divider {
+    border-top: 1px solid #303030;
+    margin: 20px 0;
+  }
+
+  p {
+    line-height: 1.4;
+    color: #a8a8a8;
+  }
+
+  .warning {
+    color: #c73b3b;
+    text-shadow: 0 0 4px #440000;
+    font-size: 0.9rem;
+  }
+
+  .terminal {
+    background: #0a0a0a;
+    color: #7ac97a;
+    padding: 10px;
+    border: 1px solid #222;
+    font-size: 0.9rem;
+    margin-top: 15px;
+  }
+
+  footer {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 0.75rem;
+    color: #555;
+  }
+
+  /* Flicker effect for abandoned look */
+  @keyframes flicker {
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+      opacity: 1;
+    }
+    20%, 24%, 55% {
+      opacity: 0.4;
+    }
+  }
+  .flicker {
+    animation: flicker 6s infinite;
+  }
+</style>
+</head>
+
+<body>
+<div class="overlay"></div>
+<div class="container">
+  <h1 class="flicker">The Orpheus Institute</h1>
+  <div class="divider"></div>
+
+  <p><strong>Department of Allocations and Internal Studies</strong></p>
+
+  <p>Access Node: <span class="warning">INTERNAL ARCHIVE / CONNECTION UNSTABLE</span></p>
+
+  <div class="terminal">
+    > user.login [accepted]<br>
+    > last recorded activity: <span class="flicker">13 years, 6 months ago</span><br>
+    > warning: archival integrity at 42%<br>
+    > directive: maintain silence
+  </div>
+
+  <p>
+    Fragments of research remain. Systems hum without direction.
+    Whoever was meant to monitor the Institute has long since stopped logging in.
+    A faint static lingers, whispering of the <em>Pallid Veil</em>.
+  </p>
+
+  <p class="warning">
+    [!] Connection to Archive E-13 is corrupted. Manual override required.
+  </p>
+
+  <footer>
+    &copy; The Orpheus Institute • Internal Network • Access Level: Terminated
+  </footer>
+</div>
+</body>
+</html>
